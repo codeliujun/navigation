@@ -15,5 +15,7 @@ typedef NS_ENUM(NSUInteger, PushingType) {
 };
 
 @interface LIUBaseAnimation : NSObject <UIViewControllerAnimatedTransitioning>
+
 @property (nonatomic,assign)PushingType type;
+
 @end

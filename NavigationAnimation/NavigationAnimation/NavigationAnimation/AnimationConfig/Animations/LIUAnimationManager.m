@@ -10,6 +10,7 @@
 #import "LIUBaseAnimation.h"
 
 #import "LIUCustomAnimation.h"
+#import "LIUTransitionAnimation.h"
 
 static LIUAnimationManager *_shareManager;
 
@@ -61,6 +62,8 @@ static LIUAnimationManager *_shareManager;
         case AnimationTypeCustom:
             return [LIUCustomAnimation new];
             break;
+            case AnimationTypeTransition:
+            return [LIUTransitionAnimation new];
         default:
             break;
     }

@@ -9,17 +9,24 @@
 #import "LIUBaseViewController.h"
 #import "LIUAnimationManager.h"
 
-@interface LIUBaseViewController ()<UINavigationControllerDelegate,UIViewControllerTransitioningDelegate,UITabBarControllerDelegate> //遵守协议，获取转场时机
-
+@interface LIUBaseViewController ()
 @end
 
 @implementation LIUBaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.delegate = self;
-    self.tabBarController.delegate = self;
+    
     // Do any additional setup after loading the view.
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    /*
+     关于delegate的问题
+     */
+//    self.navigationController.delegate = self;
+//    self.tabBarController.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -50,7 +57,7 @@
         time = AnimationTimePop;
     }
     
-    return [manage transitionWithAnimationType:AnimationTypeCustom AndAnimationTime:time];
+    return [manage transitionWithAnimationType:AnimationTypeTransition AndAnimationTime:time];
     
 }
 

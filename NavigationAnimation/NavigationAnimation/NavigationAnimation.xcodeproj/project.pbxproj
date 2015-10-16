@@ -19,6 +19,9 @@
 		851322D01BC7959800BE09D2 /* LIUAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 851322CF1BC7959800BE09D2 /* LIUAnimationManager.m */; settings = {ASSET_TAGS = (); }; };
 		851322D61BC79A0300BE09D2 /* LIUBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 851322D51BC79A0300BE09D2 /* LIUBaseAnimation.m */; settings = {ASSET_TAGS = (); }; };
 		851322DC1BC7A8DF00BE09D2 /* LIUCustomAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 851322DB1BC7A8DF00BE09D2 /* LIUCustomAnimation.m */; settings = {ASSET_TAGS = (); }; };
+		8586A5941BD0CFE80017B971 /* LIUTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8586A5931BD0CFE80017B971 /* LIUTransitionAnimation.m */; settings = {ASSET_TAGS = (); }; };
+		8586A5971BD0D3BA0017B971 /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8586A5961BD0D3BA0017B971 /* BViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8586A59A1BD0D3C20017B971 /* CViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8586A5991BD0D3C20017B971 /* CViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,12 @@
 		851322D51BC79A0300BE09D2 /* LIUBaseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIUBaseAnimation.m; sourceTree = "<group>"; };
 		851322DA1BC7A8DF00BE09D2 /* LIUCustomAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIUCustomAnimation.h; sourceTree = "<group>"; };
 		851322DB1BC7A8DF00BE09D2 /* LIUCustomAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIUCustomAnimation.m; sourceTree = "<group>"; };
+		8586A5921BD0CFE80017B971 /* LIUTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIUTransitionAnimation.h; sourceTree = "<group>"; };
+		8586A5931BD0CFE80017B971 /* LIUTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIUTransitionAnimation.m; sourceTree = "<group>"; };
+		8586A5951BD0D3BA0017B971 /* BViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
+		8586A5961BD0D3BA0017B971 /* BViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
+		8586A5981BD0D3C20017B971 /* CViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CViewController.h; sourceTree = "<group>"; };
+		8586A5991BD0D3C20017B971 /* CViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +126,10 @@
 				851322991BC7941100BE09D2 /* AppDelegate.m */,
 				8513229B1BC7941100BE09D2 /* ViewController.h */,
 				8513229C1BC7941100BE09D2 /* ViewController.m */,
+				8586A5951BD0D3BA0017B971 /* BViewController.h */,
+				8586A5961BD0D3BA0017B971 /* BViewController.m */,
+				8586A5981BD0D3C20017B971 /* CViewController.h */,
+				8586A5991BD0D3C20017B971 /* CViewController.m */,
 				8513229E1BC7941100BE09D2 /* Main.storyboard */,
 				851322C81BC794B400BE09D2 /* AnimationConfig */,
 				851322A11BC7941100BE09D2 /* Assets.xcassets */,
@@ -171,6 +184,8 @@
 				851322D51BC79A0300BE09D2 /* LIUBaseAnimation.m */,
 				851322DA1BC7A8DF00BE09D2 /* LIUCustomAnimation.h */,
 				851322DB1BC7A8DF00BE09D2 /* LIUCustomAnimation.m */,
+				8586A5921BD0CFE80017B971 /* LIUTransitionAnimation.h */,
+				8586A5931BD0CFE80017B971 /* LIUTransitionAnimation.m */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -314,9 +329,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8586A59A1BD0D3C20017B971 /* CViewController.m in Sources */,
+				8586A5941BD0CFE80017B971 /* LIUTransitionAnimation.m in Sources */,
 				8513229D1BC7941100BE09D2 /* ViewController.m in Sources */,
 				8513229A1BC7941100BE09D2 /* AppDelegate.m in Sources */,
 				851322D61BC79A0300BE09D2 /* LIUBaseAnimation.m in Sources */,
+				8586A5971BD0D3BA0017B971 /* BViewController.m in Sources */,
 				851322D01BC7959800BE09D2 /* LIUAnimationManager.m in Sources */,
 				851322DC1BC7A8DF00BE09D2 /* LIUCustomAnimation.m in Sources */,
 				851322CD1BC794CB00BE09D2 /* LIUBaseViewController.m in Sources */,

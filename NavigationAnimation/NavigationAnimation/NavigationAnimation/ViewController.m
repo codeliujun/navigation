@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationController.delegate = self;
+    self.tabBarController.delegate = self;
     // Do any additional setup after loading the view, typically from a nib.
 }
 

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LIUBaseViewController : UIViewController 
+@interface LIUBaseViewController : UIViewController <UINavigationControllerDelegate,UIViewControllerTransitioningDelegate,UITabBarControllerDelegate> //遵守协议，获取转场时机
+
 
 @end

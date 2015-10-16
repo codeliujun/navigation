@@ -12,6 +12,7 @@
 typedef NS_ENUM(NSUInteger, AnimationType) {
     AnimationTypeDefault,
     AnimationTypeCustom,
+    AnimationTypeTransition,
 };
 
 typedef NS_ENUM(NSUInteger, AnimationTime) {
