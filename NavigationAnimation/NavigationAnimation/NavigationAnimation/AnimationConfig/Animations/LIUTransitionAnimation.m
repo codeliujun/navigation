@@ -23,11 +23,11 @@
     
     CATransition *transition = [[CATransition alloc]init];
     if (self.type == PushingTypePush) {
-        transition.type = @"pageCurl";
-        transition.subtype = kCATransitionPush;
+        transition.type = @"cube";//@"pageCurl";
+        transition.subtype = kCATransitionFromRight;
     }else {
-        transition.type = @"pageUnCurl";
-        transition.subtype = kCATransitionReveal;
+        transition.type = @"cube";//@"pageUnCurl";
+        transition.subtype = kCATransitionFromTop;
     }
     
     transition.duration = [self transitionDuration:transitionContext];

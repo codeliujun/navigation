@@ -8,15 +8,24 @@
 
 #import "LIUBaseViewController.h"
 #import "LIUAnimationManager.h"
+#import "LIUBaseInterfaceAnimation.h"
 
-@interface LIUBaseViewController ()
+
+@interface LIUBaseViewController (){
+    LIUBaseInterfaceAnimation  *_interAnimation;
+}
+
+
+
 @end
 
 @implementation LIUBaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.interfaceManager = [LIUInterfaceTranManager manager];
+    self.transitioningDelegate = self;
+    _interAnimation = [LIUBaseInterfaceAnimation new];
     // Do any additional setup after loading the view.
 }
 
@@ -37,10 +46,11 @@
 
 #pragma --mark Navigation
 //交互式转场
-//- (nullable id <UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
-//                                   interactionControllerForAnimationController:(id <UIViewControllerAnimatedTransitioning>) animationController NS_AVAILABLE_IOS(7_0){
-//    return nil;
-//}
+- (nullable id <UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
+                                   interactionControllerForAnimationController:(id <UIViewControllerAnimatedTransitioning>) animationController NS_AVAILABLE_IOS(7_0){
+    return self.interfaceManager.interfaceing?self.interfaceManager:nil;
+//    return self.interfaceManager;
+}
 
 //当push的时候就是需要修改动画了，那么就可以在这里面修改动画的enume的值来更改动画
 - (nullable id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
@@ -52,13 +62,13 @@
     AnimationTime time = AnimationTimePush;
     if  (operation == UINavigationControllerOperationPush) {
         time = AnimationTimePush;
+//        return [manage transitionWithAnimationType:AnimationTypeTransition AndAnimationTime:time];
+        return nil;
     }
-    if  (operation == UINavigationControllerOperationPop) {
-        time = AnimationTimePop;
-    }
-    
-    return [manage transitionWithAnimationType:AnimationTypeTransition AndAnimationTime:time];
-    
+//    if  (operation == UINavigationControllerOperationPop) {
+//        time = AnimationTimePop;
+//    }
+    return self.interfaceManager.interfaceing?_interAnimation:nil;
 }
 
 //这个暂时没做
@@ -77,6 +87,12 @@
 //    return [manage transitionWithAnimationType:AnimationTypeCustom AndAnimationTime:time];
 //}
 
+- (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
+    return self.interfaceManager.interfaceing?_interAnimation:nil;
+}
+- (nullable id <UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id <UIViewControllerAnimatedTransitioning>)animator {
+    return self.interfaceManager.interfaceing?self.interfaceManager:nil;
+}
 
 
 @end

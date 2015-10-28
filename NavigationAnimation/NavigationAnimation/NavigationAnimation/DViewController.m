@@ -1,34 +1,31 @@
 //
-//  CViewController.m
+//  DViewController.m
 //  NavigationAnimation
 //
-//  Created by liujun on 15/10/16.
+//  Created by liujun on 15/10/28.
 //  Copyright © 2015年 liujun. All rights reserved.
 //
 
-#import "CViewController.h"
 #import "DViewController.h"
 
-@interface CViewController ()
+@interface DViewController ()
 
 @end
 
-@implementation CViewController
+@implementation DViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
-- (IBAction)button:(UIButton *)sender {
-    DViewController *dvc = [[DViewController alloc]init];
-    UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:dvc];
-    [self.interfaceManager writeToViewController:dvc];
-    [self presentViewController:navi animated:YES completion:nil];
+    
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)dismiss:(id)sender {
+    [self.interfaceManager writeToViewController:self];
 }
 
 /*

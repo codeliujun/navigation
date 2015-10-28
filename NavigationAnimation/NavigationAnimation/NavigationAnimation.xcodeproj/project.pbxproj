@@ -15,13 +15,17 @@
 		851322A51BC7941100BE09D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 851322A31BC7941100BE09D2 /* LaunchScreen.storyboard */; };
 		851322B01BC7941100BE09D2 /* NavigationAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 851322AF1BC7941100BE09D2 /* NavigationAnimationTests.m */; };
 		851322BB1BC7941100BE09D2 /* NavigationAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 851322BA1BC7941100BE09D2 /* NavigationAnimationUITests.m */; };
-		851322CD1BC794CB00BE09D2 /* LIUBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851322CC1BC794CB00BE09D2 /* LIUBaseViewController.m */; settings = {ASSET_TAGS = (); }; };
-		851322D01BC7959800BE09D2 /* LIUAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 851322CF1BC7959800BE09D2 /* LIUAnimationManager.m */; settings = {ASSET_TAGS = (); }; };
-		851322D61BC79A0300BE09D2 /* LIUBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 851322D51BC79A0300BE09D2 /* LIUBaseAnimation.m */; settings = {ASSET_TAGS = (); }; };
-		851322DC1BC7A8DF00BE09D2 /* LIUCustomAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 851322DB1BC7A8DF00BE09D2 /* LIUCustomAnimation.m */; settings = {ASSET_TAGS = (); }; };
-		8586A5941BD0CFE80017B971 /* LIUTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8586A5931BD0CFE80017B971 /* LIUTransitionAnimation.m */; settings = {ASSET_TAGS = (); }; };
-		8586A5971BD0D3BA0017B971 /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8586A5961BD0D3BA0017B971 /* BViewController.m */; settings = {ASSET_TAGS = (); }; };
-		8586A59A1BD0D3C20017B971 /* CViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8586A5991BD0D3C20017B971 /* CViewController.m */; settings = {ASSET_TAGS = (); }; };
+		851322CD1BC794CB00BE09D2 /* LIUBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851322CC1BC794CB00BE09D2 /* LIUBaseViewController.m */; };
+		851322D01BC7959800BE09D2 /* LIUAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 851322CF1BC7959800BE09D2 /* LIUAnimationManager.m */; };
+		851322D61BC79A0300BE09D2 /* LIUBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 851322D51BC79A0300BE09D2 /* LIUBaseAnimation.m */; };
+		851322DC1BC7A8DF00BE09D2 /* LIUCustomAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 851322DB1BC7A8DF00BE09D2 /* LIUCustomAnimation.m */; };
+		8586A5941BD0CFE80017B971 /* LIUTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8586A5931BD0CFE80017B971 /* LIUTransitionAnimation.m */; };
+		8586A5971BD0D3BA0017B971 /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8586A5961BD0D3BA0017B971 /* BViewController.m */; };
+		8586A59A1BD0D3C20017B971 /* CViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8586A5991BD0D3C20017B971 /* CViewController.m */; };
+		85BDB50A1BE0D300007D61E1 /* DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BDB5081BE0D300007D61E1 /* DViewController.m */; };
+		85BDB50B1BE0D300007D61E1 /* DViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85BDB5091BE0D300007D61E1 /* DViewController.xib */; };
+		85EA73551BE09ED2002189C4 /* LIUBaseInterfaceAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EA73541BE09ED2002189C4 /* LIUBaseInterfaceAnimation.m */; };
+		85EA73581BE0ABD7002189C4 /* LIUInterfaceTranManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EA73571BE0ABD6002189C4 /* LIUInterfaceTranManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +76,13 @@
 		8586A5961BD0D3BA0017B971 /* BViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
 		8586A5981BD0D3C20017B971 /* CViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CViewController.h; sourceTree = "<group>"; };
 		8586A5991BD0D3C20017B971 /* CViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CViewController.m; sourceTree = "<group>"; };
+		85BDB5071BE0D300007D61E1 /* DViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DViewController.h; sourceTree = "<group>"; };
+		85BDB5081BE0D300007D61E1 /* DViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DViewController.m; sourceTree = "<group>"; };
+		85BDB5091BE0D300007D61E1 /* DViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DViewController.xib; sourceTree = "<group>"; };
+		85EA73531BE09ED2002189C4 /* LIUBaseInterfaceAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIUBaseInterfaceAnimation.h; sourceTree = "<group>"; };
+		85EA73541BE09ED2002189C4 /* LIUBaseInterfaceAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIUBaseInterfaceAnimation.m; sourceTree = "<group>"; };
+		85EA73561BE0ABD6002189C4 /* LIUInterfaceTranManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIUInterfaceTranManager.h; sourceTree = "<group>"; };
+		85EA73571BE0ABD6002189C4 /* LIUInterfaceTranManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIUInterfaceTranManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +141,9 @@
 				8586A5961BD0D3BA0017B971 /* BViewController.m */,
 				8586A5981BD0D3C20017B971 /* CViewController.h */,
 				8586A5991BD0D3C20017B971 /* CViewController.m */,
+				85BDB5071BE0D300007D61E1 /* DViewController.h */,
+				85BDB5081BE0D300007D61E1 /* DViewController.m */,
+				85BDB5091BE0D300007D61E1 /* DViewController.xib */,
 				8513229E1BC7941100BE09D2 /* Main.storyboard */,
 				851322C81BC794B400BE09D2 /* AnimationConfig */,
 				851322A11BC7941100BE09D2 /* Assets.xcassets */,
@@ -169,6 +183,7 @@
 		851322C81BC794B400BE09D2 /* AnimationConfig */ = {
 			isa = PBXGroup;
 			children = (
+				85EA73521BE09EB6002189C4 /* InterfaceAnimation */,
 				851322C91BC794B400BE09D2 /* Animations */,
 				851322CA1BC794B400BE09D2 /* BaseController */,
 			);
@@ -197,6 +212,17 @@
 				851322CC1BC794CB00BE09D2 /* LIUBaseViewController.m */,
 			);
 			path = BaseController;
+			sourceTree = "<group>";
+		};
+		85EA73521BE09EB6002189C4 /* InterfaceAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				85EA73531BE09ED2002189C4 /* LIUBaseInterfaceAnimation.h */,
+				85EA73541BE09ED2002189C4 /* LIUBaseInterfaceAnimation.m */,
+				85EA73561BE0ABD6002189C4 /* LIUInterfaceTranManager.h */,
+				85EA73571BE0ABD6002189C4 /* LIUInterfaceTranManager.m */,
+			);
+			path = InterfaceAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +331,7 @@
 				851322A51BC7941100BE09D2 /* LaunchScreen.storyboard in Resources */,
 				851322A21BC7941100BE09D2 /* Assets.xcassets in Resources */,
 				851322A01BC7941100BE09D2 /* Main.storyboard in Resources */,
+				85BDB50B1BE0D300007D61E1 /* DViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,14 +356,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85EA73551BE09ED2002189C4 /* LIUBaseInterfaceAnimation.m in Sources */,
 				8586A59A1BD0D3C20017B971 /* CViewController.m in Sources */,
 				8586A5941BD0CFE80017B971 /* LIUTransitionAnimation.m in Sources */,
+				85EA73581BE0ABD7002189C4 /* LIUInterfaceTranManager.m in Sources */,
 				8513229D1BC7941100BE09D2 /* ViewController.m in Sources */,
 				8513229A1BC7941100BE09D2 /* AppDelegate.m in Sources */,
 				851322D61BC79A0300BE09D2 /* LIUBaseAnimation.m in Sources */,
 				8586A5971BD0D3BA0017B971 /* BViewController.m in Sources */,
 				851322D01BC7959800BE09D2 /* LIUAnimationManager.m in Sources */,
 				851322DC1BC7A8DF00BE09D2 /* LIUCustomAnimation.m in Sources */,
+				85BDB50A1BE0D300007D61E1 /* DViewController.m in Sources */,
 				851322CD1BC794CB00BE09D2 /* LIUBaseViewController.m in Sources */,
 				851322971BC7941100BE09D2 /* main.m in Sources */,
 			);

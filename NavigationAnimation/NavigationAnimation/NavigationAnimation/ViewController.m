@@ -17,8 +17,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.delegate = self;
+//    self.navigationController.transitioningDelegate = self;
     self.tabBarController.delegate = self;
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    UIViewController *deVC = segue.destinationViewController;
+    deVC.hidesBottomBarWhenPushed = YES;
+    [self.interfaceManager writeToViewController:deVC];
+    
 }
 
 - (void)didReceiveMemoryWarning {
